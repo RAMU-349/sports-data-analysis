@@ -67,3 +67,6 @@ if 'Year' in df.columns:
     plt.xlabel("Year")
     plt.ylabel("Performance")
     plt.show()
+    # Get Team A average performance
+team_a_avg = df[df['Team'] == 'TeamA']['Performance'].mean()
+print("\nTeam A Average Performance:", team_a_avg)
